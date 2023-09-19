@@ -42,7 +42,7 @@ function Recipes({ show, recipes, setShow, history, updateHeader, setRecipe }) {
       {/* {console.log(recipes)} */}
       <Header history={ history } />
       <TagsForFilters history={ history } />
-        <h3>RECIPES</h3>
+      <h3>RECIPES</h3>
       <div className="recipes_container">
         {show && (
           recipes.map(({ strMealThumb, strMeal, idMeal }, index) => (

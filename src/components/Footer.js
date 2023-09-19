@@ -19,32 +19,32 @@ class Footer extends React.Component {
 
   render() {
     return (
-        <footer
-          className="footer"
-          data-testid="footer"
+      <footer
+        className="footer"
+        data-testid="footer"
+      >
+        <button
+          className="BTN_Footer"
+          type="submit"
+          data-testid="button-drinks"
+          onClick={ this.handleClickDrinks }
         >
-          <button
-            className="BTN_Footer"
-            type="submit"
-            data-testid="button-drinks"
-            onClick={ this.handleClickDrinks }
-          >
-            <i className="bi bi-cup-straw" />
-          </button>
-          <button
-            className="BTN_Footer"
-            type="submit"
-            data-testid="button-meals"
-            onClick={ this.handleClickMeals }
-          >
-            <img
-              src={ mealIcon }
-              alt="meal"
-              data-testid="meals-bottom-btn"
-              width="50px"
-            />
-          </button>
-        </footer>
+          <i className="bi bi-cup-straw" />
+        </button>
+        <button
+          className="BTN_Footer"
+          type="submit"
+          data-testid="button-meals"
+          onClick={ this.handleClickMeals }
+        >
+          <img
+            src={ mealIcon }
+            alt="meal"
+            data-testid="meals-bottom-btn"
+            width="50px"
+          />
+        </button>
+      </footer>
     );
   }
 }

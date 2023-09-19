@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchByCategory, fetchMealsAndDrinks, filterByCategory } from '../API/fetchAPI';
 import { rendersRecipe } from '../redux/actions';
-import All from '../images/icones/all.png'
-import Beef from '../images/icones/beef.png'
-import Breakfast from '../images/icones/breakfast.png'
-import Chicken from '../images/icones/chicken.png'
-import Dessert from '../images/icones/dessert.png'
-import Goat from '../images/icones/goat.png'
+import All from '../images/icones/all.png';
+import Beef from '../images/icones/beef.png';
+import Breakfast from '../images/icones/breakfast.png';
+import Chicken from '../images/icones/chicken.png';
+import Dessert from '../images/icones/dessert.png';
+import Goat from '../images/icones/goat.png';
 import '../css/TagsForFilter.css';
 
 function TagsForFilters({ history, setRecipes }) {
-  const icones = [Beef, Breakfast, Chicken, Dessert, Goat]
+  const icones = [Beef, Breakfast, Chicken, Dessert, Goat];
   const cinco = 5;
   const LENGTH = 11;
   const type = history.location.pathname.substring(1);
@@ -96,7 +96,7 @@ function TagsForFilters({ history, setRecipes }) {
             onClick={ handelClick }
           >
             {/* {e.strCategory} */}
-            <img src={icones[index]} alt={ e.strCategory } name={ e.strCategory } />
+            <img src={ icones[index] } alt={ e.strCategory } name={ e.strCategory } />
           </button>))
       }
       {
@@ -108,7 +108,7 @@ function TagsForFilters({ history, setRecipes }) {
             data-testid="All-category-filter"
             onClick={ handelClick }
           >
-            <img src={All} name="buttonAll" />
+            <img src={ All } alt="botão all" name="buttonAll" />
           </button>
         )
       }

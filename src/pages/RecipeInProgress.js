@@ -161,7 +161,6 @@ function RecipeInProgress({ match, history }) {
         data-testid="recipe-photo"
       />
       <h1 data-testid="recipe-title">{productDetails.strMeal}</h1>
-
       <button
         className="BTN_share"
         type="button"
@@ -173,10 +172,8 @@ function RecipeInProgress({ match, history }) {
           alt="shareIcon"
           src={ sharetIcon }
         />
-
       </button>
       { linkCopied && (<span>Link copied!</span>)}
-
       <button
         className="BTN_favorite"
         type="button"
@@ -195,7 +192,6 @@ function RecipeInProgress({ match, history }) {
             />
           )
         }
-
       </button>
       <h4 data-testid="recipe-category">{ productDetails.strCategory }</h4>
       <p data-testid="instructions">{productDetails.strInstructions}</p>
@@ -231,7 +227,6 @@ function RecipeInProgress({ match, history }) {
         onClick={ redirect }
       >
         Finalizar
-
       </button>
 
     </div>
